@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zhi Jye Ooi | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="/_sdk/element_sdk.js"></script>
   <style>
     body {
@@ -58,159 +58,207 @@
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  </head>
  <body class="h-full bg-gray-900 text-gray-100 overflow-auto">
-  <div id="app-wrapper" class="w-full h-full overflow-auto"><!-- Navigation -->
+  <div id="app-wrapper" class="w-full h-full overflow-auto">
+   <!-- Navigation -->
    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-800">
     <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-     <div class="font-bold text-2xl text-orange-400">
-      ZJO
-     </div>
+     <div class="font-bold text-2xl text-orange-400">ZJO</div>
      <div class="flex items-center gap-6">
-      <div class="hidden md:flex gap-6"><a href="#about" class="text-gray-300 hover:text-orange-400 transition-colors" data-i18n="nav_about">Über mich</a> <a href="#skills" class="text-gray-300 hover:text-orange-400 transition-colors" data-i18n="nav_skills">Fähigkeiten</a> <a href="#experience" class="text-gray-300 hover:text-orange-400 transition-colors" data-i18n="nav_experience">Erfahrung</a> <a href="#contact" class="text-gray-300 hover:text-orange-400 transition-colors" data-i18n="nav_contact">Kontakt</a>
+      <div class="hidden md:flex gap-6">
+       <a href="#about" class="text-gray-300 hover:text-orange-400 transition-colors" data-i18n="nav_about">Über mich</a>
+       <a href="#skills" class="text-gray-300 hover:text-orange-400 transition-colors" data-i18n="nav_skills">Fähigkeiten</a>
+       <a href="#experience" class="text-gray-300 hover:text-orange-400 transition-colors" data-i18n="nav_experience">Erfahrung</a>
+       <a href="#contact" class="text-gray-300 hover:text-orange-400 transition-colors" data-i18n="nav_contact">Kontakt</a>
       </div>
-      <div class="relative"><button id="langButton" class="flex items-center gap-2 px-3 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors"> <span id="currentLangFlag" class="text-xl">🇩🇪</span> <span id="currentLangCode" class="text-gray-300 text-sm font-medium">DE</span> </button>
-       <div id="langMenu" class="hidden absolute top-full right-0 mt-2 bg-gray-800 rounded-lg border border-gray-700 shadow-xl overflow-hidden min-w-[130px]"><button class="lang-option w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-700 transition-colors" data-lang="de" data-flag="🇩🇪" data-code="DE"> <span class="text-xl">🇩🇪</span> <span class="text-gray-300 text-sm">Deutsch</span> </button> <button class="lang-option w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-700 transition-colors" data-lang="en" data-flag="🇬🇧" data-code="EN"> <span class="text-xl">🇬🇧</span> <span class="text-gray-300 text-sm">English</span> </button> <button class="lang-option w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-700 transition-colors" data-lang="zh" data-flag="🇨🇳" data-code="中文"> <span class="text-xl">🇨🇳</span> <span class="text-gray-300 text-sm">中文</span> </button> <button class="lang-option w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-700 transition-colors" data-lang="ms" data-flag="🇲🇾" data-code="MS"> <span class="text-xl">🇲🇾</span> <span class="text-gray-300 text-sm">Bahasa</span> </button>
+      <div class="relative">
+       <button id="langButton" class="flex items-center gap-2 px-3 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors">
+        <span id="currentLangFlag" class="text-xl">🇩🇪</span>
+        <span id="currentLangCode" class="text-gray-300 text-sm font-medium">DE</span>
+       </button>
+       <div id="langMenu" class="hidden absolute top-full right-0 mt-2 bg-gray-800 rounded-lg border border-gray-700 shadow-xl overflow-hidden min-w-[130px]">
+        <button class="lang-option w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-700 transition-colors" data-lang="de" data-flag="🇩🇪" data-code="DE">
+         <span class="text-xl">🇩🇪</span>
+         <span class="text-gray-300 text-sm">Deutsch</span>
+        </button>
+        <button class="lang-option w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-700 transition-colors" data-lang="en" data-flag="🇬🇧" data-code="EN">
+         <span class="text-xl">🇬🇧</span>
+         <span class="text-gray-300 text-sm">English</span>
+        </button>
+        <button class="lang-option w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-700 transition-colors" data-lang="zh" data-flag="🇨🇳" data-code="中文">
+         <span class="text-xl">🇨🇳</span>
+         <span class="text-gray-300 text-sm">中文</span>
+        </button>
+        <button class="lang-option w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-700 transition-colors" data-lang="ms" data-flag="🇲🇾" data-code="MS">
+         <span class="text-xl">🇲🇾</span>
+         <span class="text-gray-300 text-sm">Bahasa</span>
+        </button>
        </div>
       </div>
      </div>
     </div>
-   </nav><!-- Hero Section -->
+   </nav>
+
+   <!-- Hero Section -->
    <section class="min-h-screen flex items-center justify-center relative px-6 pt-20">
     <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
     <div class="relative z-10 text-center max-w-4xl">
      <div class="animate-float mb-8">
       <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-orange-400 to-amber-500 p-1 animate-pulse-ring">
-       <div class="w-full h-full rounded-full bg-gray-800 flex items-center justify-center"><span class="text-5xl">👨‍💼</span>
+       <div class="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
+        <span class="text-5xl">👨‍💼</span>
        </div>
       </div>
      </div>
      <h1 id="hero-name" class="text-5xl md:text-7xl font-bold mb-6 gradient-text">Zhi Jye Ooi</h1>
      <div class="h-16 mb-8 flex items-center justify-center">
-      <p class="text-xl md:text-2xl text-gray-300"><span id="typing-text"></span> <span id="cursor" class="inline-block w-0.5 h-6 bg-orange-400 ml-1 animate-pulse"></span></p>
+      <p class="text-xl md:text-2xl text-gray-300">
+       <span id="typing-text"></span>
+       <span id="cursor" class="inline-block w-0.5 h-6 bg-orange-400 ml-1 animate-pulse"></span>
+      </p>
      </div>
-     <div class="flex flex-wrap justify-center gap-3 mb-10"><span class="px-4 py-2 bg-gray-800 rounded-full text-orange-300 border border-orange-500/30 text-sm"> 🇲🇾 Malaysia → Deutschland </span> <span class="px-4 py-2 bg-gray-800 rounded-full text-amber-300 border border-amber-500/30 text-sm"> 🎓 M.Eng. Bauingenieurwesen </span> <span class="px-4 py-2 bg-gray-800 rounded-full text-emerald-300 border border-emerald-500/30 text-sm"> 🗣 4 Sprachen fließend </span>
-     </div><a href="#contact"> <button id="hero-cta" class="bg-gradient-to-r from-orange-500 to-amber-500 text-gray-900 font-semibold px-8 py-4 rounded-full hover:shadow-lg hover:shadow-orange-500/50 transform hover:scale-105 transition-all"> Kontakt aufnehmen → </button> </a>
+     <div class="flex flex-wrap justify-center gap-3 mb-10">
+      <span class="px-4 py-2 bg-gray-800 rounded-full text-orange-300 border border-orange-500/30 text-sm" data-i18n="hero_badge1">
+       🇲🇾 Malaysia → Deutschland
+      </span>
+      <span class="px-4 py-2 bg-gray-800 rounded-full text-amber-300 border border-amber-500/30 text-sm" data-i18n="hero_badge2">
+       🎓 M.Ing. Bauingenieurwesen
+      </span>
+      <span class="px-4 py-2 bg-gray-800 rounded-full text-emerald-300 border border-emerald-500/30 text-sm" data-i18n="hero_badge3">
+       🗣 4 Sprachen fließend
+      </span>
+     </div>
+     <a href="#contact">
+      <button id="hero-cta" class="bg-gradient-to-r from-orange-500 to-amber-500 text-gray-900 font-semibold px-8 py-4 rounded-full hover:shadow-lg hover:shadow-orange-500/50 transform hover:scale-105 transition-all">
+       Kontakt aufnehmen →
+      </button>
+     </a>
     </div>
-   </section><!-- About Section -->
+   </section>
+
+   <!-- About Section -->
    <section id="about" class="py-20 px-6">
     <div class="max-w-6xl mx-auto">
-     <h2 class="text-4xl font-bold text-center mb-12"><span class="text-orange-400" data-i18n="about_title">Über</span> <span data-i18n="about_me">Mich</span></h2>
+     <h2 class="text-4xl font-bold text-center mb-12">
+      <span class="text-orange-400" data-i18n="about_title">Über</span>
+      <span data-i18n="about_me">Mich</span>
+     </h2>
      <div class="grid md:grid-cols-2 gap-10 items-center">
       <div class="space-y-5">
-       <p class="text-lg text-gray-300 leading-relaxed" data-i18n="about_p1">Als <span class="text-orange-400 font-semibold">Bauingenieur</span> mit internationalem Hintergrund bringe ich eine einzigartige Kombination aus technischer Expertise und interkultureller Kompetenz mit.</p>
-       <p class="text-lg text-gray-300 leading-relaxed" data-i18n="about_p2">Mit <span class="text-amber-400 font-semibold">Deutschkenntnissen auf C1-Niveau</span> und meiner mehrsprachigen Fähigkeit kommuniziere ich mühelos in vier Sprachen und überbrücke kulturelle Grenzen.</p>
-       <p class="text-lg text-gray-300 leading-relaxed" data-i18n="about_p3">Meine <span class="text-emerald-400 font-semibold">analytische Denkweise</span> und mein betriebswirtschaftliches Verständnis aus dem familiengeführten Unternehmen ergänzen meine technischen Fähigkeiten perfekt.</p>
+       <p class="text-lg text-gray-300 leading-relaxed" data-i18n="about_p1">
+        Als <span class="text-orange-400 font-semibold">Bauingenieur</span> mit internationalem Hintergrund bringe ich eine einzigartige Kombination aus technischer Expertise und interkultureller Kompetenz mit.
+       </p>
+       <p class="text-lg text-gray-300 leading-relaxed" data-i18n="about_p2">
+        Mit <span class="text-amber-400 font-semibold">Deutschkenntnissen auf C1-Niveau</span> und meiner mehrsprachigen Fähigkeit kommuniziere ich mühelos in vier Sprachen und überbrücke kulturelle Grenzen.
+       </p>
+       <p class="text-lg text-gray-300 leading-relaxed" data-i18n="about_p3">
+        Meine <span class="text-emerald-400 font-semibold">analytische Denkweise</span> und mein betriebswirtschaftliches Verständnis aus dem familiengeführten Unternehmen ergänzen meine technischen Fähigkeiten perfekt.
+       </p>
       </div>
       <div class="grid grid-cols-2 gap-4">
        <div class="skill-card bg-gray-800 p-6 rounded-xl border border-gray-700 text-center">
-        <div class="text-4xl mb-2">
-         🇨🇳
-        </div>
-        <div class="font-semibold text-gray-200">
-         Chinesisch
-        </div>
-        <div class="text-sm text-gray-400">
-         Muttersprache
-        </div>
+        <div class="text-4xl mb-2">🇨🇳</div>
+        <div class="font-semibold text-gray-200" data-i18n="lang_chinese">Chinesisch</div>
+        <div class="text-sm text-gray-400" data-i18n="lang_native">Muttersprache</div>
        </div>
        <div class="skill-card bg-gray-800 p-6 rounded-xl border border-gray-700 text-center">
-        <div class="text-4xl mb-2">
-         🇩🇪
-        </div>
-        <div class="font-semibold text-gray-200">
-         Deutsch
-        </div>
-        <div class="text-sm text-gray-400">
-         C1-Niveau
-        </div>
+        <div class="text-4xl mb-2">🇩🇪</div>
+        <div class="font-semibold text-gray-200" data-i18n="lang_german">Deutsch</div>
+        <div class="text-sm text-gray-400" data-i18n="lang_c1">C1-Niveau</div>
        </div>
        <div class="skill-card bg-gray-800 p-6 rounded-xl border border-gray-700 text-center">
-        <div class="text-4xl mb-2">
-         🇬🇧
-        </div>
-        <div class="font-semibold text-gray-200">
-         Englisch
-        </div>
-        <div class="text-sm text-gray-400">
-         Fließend
-        </div>
+        <div class="text-4xl mb-2">🇬🇧</div>
+        <div class="font-semibold text-gray-200" data-i18n="lang_english">Englisch</div>
+        <div class="text-sm text-gray-400" data-i18n="lang_fluent">Fließend</div>
        </div>
        <div class="skill-card bg-gray-800 p-6 rounded-xl border border-gray-700 text-center">
-        <div class="text-4xl mb-2">
-         🇲🇾
-        </div>
-        <div class="font-semibold text-gray-200">
-         Malaiisch
-        </div>
-        <div class="text-sm text-gray-400">
-         Fließend
-        </div>
+        <div class="text-4xl mb-2">🇲🇾</div>
+        <div class="font-semibold text-gray-200" data-i18n="lang_malay">Malaiisch</div>
+        <div class="text-sm text-gray-400" data-i18n="lang_fluent2">Fließend</div>
        </div>
       </div>
      </div>
     </div>
-   </section><!-- Skills Section -->
+   </section>
+
+   <!-- Skills Section -->
    <section id="skills" class="py-20 px-6 bg-gray-800/30">
     <div class="max-w-6xl mx-auto">
-     <h2 class="text-4xl font-bold text-center mb-12"><span class="text-orange-400" data-i18n="skills_title">Fähigkeiten</span> <span data-i18n="skills_subtitle">&amp; Kompetenzen</span></h2>
+     <h2 class="text-4xl font-bold text-center mb-12">
+      <span class="text-orange-400" data-i18n="skills_title">Fähigkeiten</span>
+      <span data-i18n="skills_subtitle">& Kompetenzen</span>
+     </h2>
      <div class="grid md:grid-cols-3 gap-6">
       <div class="skill-card bg-gray-800 p-6 rounded-xl border border-gray-700">
-       <div class="w-14 h-14 bg-orange-500/20 rounded-xl flex items-center justify-center mb-4"><span class="text-3xl">🛠️</span>
+       <div class="w-14 h-14 bg-orange-500/20 rounded-xl flex items-center justify-center mb-4">
+        <span class="text-3xl">🛠️</span>
        </div>
        <h3 class="text-xl font-semibold mb-4 text-orange-300" data-i18n="tech_title">Technische Software</h3>
        <ul class="space-y-2 text-gray-300">
-        <li>📐 AutoCAD LT - Experte</li>
-        <li>• Microsoft Excel - Experte</li>
-        <li>• Word &amp; PowerPoint - Sehr gut</li>
+        <li data-i18n="tech_autocad">📐 AutoCAD LT - Experte</li>
+        <li data-i18n="tech_excel">• Microsoft Excel - Experte</li>
+        <li data-i18n="tech_office">• Word & PowerPoint - Sehr gut</li>
        </ul>
       </div>
       <div class="skill-card bg-gray-800 p-6 rounded-xl border border-gray-700">
-       <div class="w-14 h-14 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-4"><span class="text-3xl">💻</span>
+       <div class="w-14 h-14 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-4">
+        <span class="text-3xl">💻</span>
        </div>
        <h3 class="text-xl font-semibold mb-4 text-emerald-300" data-i18n="prog_title">Programmierung</h3>
        <ul class="space-y-2 text-gray-300">
-        <li>• Python - Selbststudium</li>
-        <li>• Java - Selbststudium</li>
-        <li>• Webentwicklung</li>
-        <li>• Arduino - Zahlreiche Projekte</li>
+        <li data-i18n="prog_python">• Python - Selbststudium</li>
+        <li data-i18n="prog_java">• Java - Selbststudium</li>
+        <li data-i18n="prog_web">• Webentwicklung</li>
+        <li data-i18n="prog_arduino">• Arduino - Zahlreiche Projekte</li>
        </ul>
       </div>
       <div class="skill-card bg-gray-800 p-6 rounded-xl border border-gray-700">
-       <div class="w-14 h-14 bg-amber-500/20 rounded-xl flex items-center justify-center mb-4"><span class="text-3xl">📊</span>
+       <div class="w-14 h-14 bg-amber-500/20 rounded-xl flex items-center justify-center mb-4">
+        <span class="text-3xl">📊</span>
        </div>
-       <h3 class="text-xl font-semibold mb-4 text-amber-300" data-i18n="business_title">Business &amp; Analytik</h3>
+       <h3 class="text-xl font-semibold mb-4 text-amber-300" data-i18n="business_title">Business & Analytik</h3>
        <ul class="space-y-2 text-gray-300">
-        <li>• LCCI-Zertifikat Accounting</li>
-        <li>• Mathematik (Abakus-Lehrer)</li>
-        <li>• E-Commerce Erfahrung</li>
+        <li data-i18n="business_lcci">• LCCI-Zertifikat Accounting</li>
+        <li data-i18n="business_math">• Mathematik (Abakus-Lehrer)</li>
+        <li data-i18n="business_ecommerce">• E-Commerce Erfahrung</li>
        </ul>
       </div>
      </div>
     </div>
-   </section><!-- Experience Section -->
+   </section>
+
+   <!-- Experience Section -->
    <section id="experience" class="py-20 px-6">
     <div class="max-w-4xl mx-auto">
-     <h2 class="text-4xl font-bold text-center mb-12"><span class="text-orange-400" data-i18n="exp_title">Berufliche</span> <span data-i18n="exp_subtitle">Erfahrung</span></h2>
-     <div class="relative"><!-- Timeline Line -->
+     <h2 class="text-4xl font-bold text-center mb-12">
+      <span class="text-orange-400" data-i18n="exp_title">Berufliche</span>
+      <span data-i18n="exp_subtitle">Erfahrung</span>
+     </h2>
+     <div class="relative">
       <div class="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-500 via-amber-500 to-transparent hidden md:block"></div>
       <div class="space-y-6">
+       
        <div class="experience-card skill-card bg-gray-800 p-6 rounded-xl border border-gray-700" style="opacity: 0; transform: translateY(20px);">
         <div class="flex items-start gap-4">
-         <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 relative z-10"><span class="text-xl">🏗</span>
+         <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
+          <span class="text-xl">🏗</span>
          </div>
          <div class="flex-1">
           <div class="flex justify-between items-start mb-2">
            <div>
             <h3 class="text-xl font-semibold text-gray-100" data-i18n="current_position">Bauingenieur</h3>
-            <p class="text-orange-400" data-i18n="current_company">SONNTAG Baugesellschaft mbH &amp; Co. KG</p>
-           </div><span class="px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-full text-sm" data-i18n="current_badge">Aktuell</span>
+            <p class="text-orange-400" data-i18n="current_company">SONNTAG Baugesellschaft mbH & Co. KG</p>
+           </div>
+           <span class="px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-full text-sm" data-i18n="current_badge">Aktuell</span>
           </div>
           <p class="text-gray-300 text-sm" data-i18n="current_desc">Verantwortlich für Planung, Berechnung und Überwachung von Bauprojekten. Anwendung modernster CAD-Software und enge Zusammenarbeit mit interdisziplinären Teams.</p>
          </div>
         </div>
        </div>
+
        <div class="experience-card skill-card bg-gray-800 p-6 rounded-xl border border-gray-700" style="opacity: 0; transform: translateY(20px);">
         <div class="flex items-start gap-4">
-         <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0 relative z-10"><span class="text-xl">🎓</span>
+         <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
+          <span class="text-xl">🎓</span>
          </div>
          <div class="flex-1">
           <h3 class="text-xl font-semibold text-gray-100 mb-1" data-i18n="edu_master_title">Master of Engineering (M.Eng.)</h3>
@@ -219,20 +267,24 @@
          </div>
         </div>
        </div>
+
        <div class="experience-card skill-card bg-gray-800 p-6 rounded-xl border border-gray-700" style="opacity: 0; transform: translateY(20px);">
         <div class="flex items-start gap-4">
-         <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 relative z-10"><span class="text-xl">💼</span>
+         <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
+          <span class="text-xl">💼</span>
          </div>
          <div class="flex-1">
           <h3 class="text-xl font-semibold text-gray-100 mb-1" data-i18n="praktikum_title">Praktikum</h3>
-          <p class="text-purple-400 mb-2" data-i18n="praktikum_company">SONNTAG Baugesellschaft mbH &amp; Co. KG</p>
+          <p class="text-purple-400 mb-2" data-i18n="praktikum_company">SONNTAG Baugesellschaft mbH & Co. KG</p>
           <p class="text-gray-300 text-sm" data-i18n="praktikum_desc">Praktische Erfahrung in Bauplanung und -überwachung, CAD-Anwendung und Projektkoordination.</p>
          </div>
         </div>
        </div>
+
        <div class="experience-card skill-card bg-gray-800 p-6 rounded-xl border border-gray-700" style="opacity: 0; transform: translateY(20px);">
         <div class="flex items-start gap-4">
-         <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 relative z-10"><span class="text-xl">📚</span>
+         <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
+          <span class="text-xl">📚</span>
          </div>
          <div class="flex-1">
           <h3 class="text-xl font-semibold text-gray-100 mb-1" data-i18n="edu_bachelor_title">Bachelor of Engineering (B.Eng.)</h3>
@@ -241,9 +293,11 @@
          </div>
         </div>
        </div>
+
        <div class="experience-card skill-card bg-gray-800 p-6 rounded-xl border border-gray-700" style="opacity: 0; transform: translateY(20px);">
         <div class="flex items-start gap-4">
-         <div class="w-12 h-12 bg-cyan-500 rounded-full flex items-center justify-center flex-shrink-0 relative z-10"><span class="text-xl">🔧</span>
+         <div class="w-12 h-12 bg-cyan-500 rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
+          <span class="text-xl">🔧</span>
          </div>
          <div class="flex-1">
           <h3 class="text-xl font-semibold text-gray-100 mb-1" data-i18n="vorpraktikum_title">Vorpraktikum</h3>
@@ -252,76 +306,79 @@
          </div>
         </div>
        </div>
+
        <div class="experience-card skill-card bg-gray-800 p-6 rounded-xl border border-gray-700" style="opacity: 0; transform: translateY(20px);">
         <div class="flex items-start gap-4">
-         <div class="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0 relative z-10"><span class="text-xl">🏪</span>
+         <div class="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
+          <span class="text-xl">🏪</span>
          </div>
          <div class="flex-1">
           <h3 class="text-xl font-semibold text-gray-100 mb-1" data-i18n="family_title">Familienunternehmen</h3>
-          <p class="text-emerald-400 mb-2" data-i18n="family_subtitle">Stationärer Handel &amp; E-Commerce</p>
+          <p class="text-emerald-400 mb-2" data-i18n="family_subtitle">Stationärer Handel & E-Commerce</p>
           <p class="text-gray-300 text-sm" data-i18n="family_desc">Aktive Mitarbeit mit Fokus auf Buchhaltung, Kundenbeziehungen und digitale Vertriebskanäle.</p>
          </div>
         </div>
        </div>
+
       </div>
      </div>
     </div>
-   </section><!-- Contact Section -->
+   </section>
+
+   <!-- Contact Section -->
    <section id="contact" class="py-20 px-6 bg-gradient-to-b from-gray-800/50 to-gray-900">
     <div class="max-w-2xl mx-auto text-center">
-     <h2 class="text-4xl font-bold mb-6"><span class="text-orange-400" data-i18n="contact_title">Lassen Sie uns</span> <span data-i18n="contact_subtitle">zusammenarbeiten</span></h2>
+     <h2 class="text-4xl font-bold mb-6">
+      <span class="text-orange-400" data-i18n="contact_title">Lassen Sie uns</span>
+      <span data-i18n="contact_subtitle">zusammenarbeiten</span>
+     </h2>
      <p class="text-lg text-gray-300 mb-10" data-i18n="contact_desc">Ich bin offen für neue Herausforderungen und spannende Projekte. Kontaktieren Sie mich gerne!</p>
      <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
       <div class="space-y-4">
        <div class="flex items-center gap-4 p-4 bg-gray-700/50 rounded-xl">
-        <div class="w-12 h-12 bg-orange-500/20 rounded-full flex items-center justify-center"><span class="text-2xl">📧</span>
+        <div class="w-12 h-12 bg-orange-500/20 rounded-full flex items-center justify-center">
+         <span class="text-2xl">📧</span>
         </div>
         <div class="text-left">
-         <div class="text-sm text-gray-400" data-i18n="contact_email">
-          E-Mail
-         </div>
-         <div class="text-gray-200">
-          hello@ooizhijye.com
-         </div>
-        </div>
-       </div><a href="https://github.com/ooi-ui" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 bg-gray-700/50 rounded-xl hover:bg-gray-700 transition-colors">
-        <div class="w-12 h-12 bg-amber-500/20 rounded-full flex items-center justify-center"><span class="text-2xl">💻</span>
-        </div>
-        <div class="text-left">
-         <div class="text-sm text-gray-400" data-i18n="contact_github">
-          GitHub
-         </div>
-         <div class="text-gray-200">
-          github.com/ooi-ui
-         </div>
-        </div></a>
-       <div class="flex items-center gap-4 p-4 bg-gray-700/50 rounded-xl">
-        <div class="w-12 h-12 bg-emerald-500/20 rounded-full flex items-center justify-center"><span class="text-2xl">📍</span>
-        </div>
-        <div class="text-left">
-         <div class="text-sm text-gray-400" data-i18n="contact_location">
-          Standort
-         </div>
-         <div class="text-gray-200" data-i18n="contact_location_value">
-          Deutschland
-         </div>
+         <div class="text-sm text-gray-400" data-i18n="contact_email">E-Mail</div>
+         <div class="text-gray-200">hello@ooizhijye.com</div>
         </div>
        </div>
-      </div><button id="contact-cta" class="mt-8 w-full bg-gradient-to-r from-orange-500 to-amber-500 text-gray-900 font-semibold px-8 py-4 rounded-full hover:shadow-lg hover:shadow-orange-500/50 transform hover:scale-105 transition-all"> Nachricht senden → </button>
+       <a href="https://github.com/ooi-ui" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 bg-gray-700/50 rounded-xl hover:bg-gray-700 transition-colors">
+        <div class="w-12 h-12 bg-amber-500/20 rounded-full flex items-center justify-center">
+         <span class="text-2xl">💻</span>
+        </div>
+        <div class="text-left">
+         <div class="text-sm text-gray-400" data-i18n="contact_github">GitHub</div>
+         <div class="text-gray-200">github.com/ooi-ui</div>
+        </div>
+       </a>
+       <div class="flex items-center gap-4 p-4 bg-gray-700/50 rounded-xl">
+        <div class="w-12 h-12 bg-emerald-500/20 rounded-full flex items-center justify-center">
+         <span class="text-2xl">📍</span>
+        </div>
+        <div class="text-left">
+         <div class="text-sm text-gray-400" data-i18n="contact_location">Standort</div>
+         <div class="text-gray-200" data-i18n="contact_location_value">Deutschland</div>
+        </div>
+       </div>
+      </div>
+      <button id="contact-cta" class="mt-8 w-full bg-gradient-to-r from-orange-500 to-amber-500 text-gray-900 font-semibold px-8 py-4 rounded-full hover:shadow-lg hover:shadow-orange-500/50 transform hover:scale-105 transition-all">
+       Nachricht senden →
+      </button>
      </div>
     </div>
-   </section><!-- Footer -->
+   </section>
+
+   <!-- Footer -->
    <footer class="py-6 px-6 border-t border-gray-800">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
-     <div class="text-orange-400 font-bold text-xl">
-      ZJO
-     </div>
-     <div class="text-gray-500 text-sm">
-      © 2024 Zhi Jye Ooi
-     </div>
+     <div class="text-orange-400 font-bold text-xl">ZJO</div>
+     <div class="text-gray-500 text-sm">© 2026 Zhi Jye Ooi</div>
     </div>
    </footer>
   </div>
+
   <script>
     const defaultConfig = {
       hero_name: 'Zhi Jye Ooi',
@@ -340,20 +397,52 @@
 
     const translations = {
       de: {
+        // Navigation
         nav_about: 'Über mich',
         nav_skills: 'Fähigkeiten',
         nav_experience: 'Erfahrung',
         nav_contact: 'Kontakt',
+        
+        // Hero badges
+        hero_badge1: '🇲🇾 Malaysia → Deutschland',
+        hero_badge2: '🎓 M.Ing. Bauingenieurwesen',
+        hero_badge3: '🗣 4 Sprachen fließend',
+        
+        // About section
         about_title: 'Über',
         about_me: 'Mich',
         about_p1: 'Als <span class="text-orange-400 font-semibold">Bauingenieur</span> mit internationalem Hintergrund bringe ich eine einzigartige Kombination aus technischer Expertise und interkultureller Kompetenz mit.',
         about_p2: 'Mit <span class="text-amber-400 font-semibold">Deutschkenntnissen auf C1-Niveau</span> und meiner mehrsprachigen Fähigkeit kommuniziere ich mühelos in vier Sprachen und überbrücke kulturelle Grenzen.',
         about_p3: 'Meine <span class="text-emerald-400 font-semibold">analytische Denkweise</span> und mein betriebswirtschaftliches Verständnis aus dem familiengeführten Unternehmen ergänzen meine technischen Fähigkeiten perfekt.',
+        
+        // Language cards
+        lang_chinese: 'Chinesisch',
+        lang_german: 'Deutsch',
+        lang_english: 'Englisch',
+        lang_malay: 'Malaiisch',
+        lang_native: 'Muttersprache',
+        lang_c1: 'C1-Niveau',
+        lang_fluent: 'Fließend',
+        lang_fluent2: 'Fließend',
+        
+        // Skills section
         skills_title: 'Fähigkeiten',
         skills_subtitle: '& Kompetenzen',
         tech_title: 'Technische Software',
+        tech_autocad: '📐 AutoCAD LT - Experte',
+        tech_excel: '• Microsoft Excel - Experte',
+        tech_office: '• Word & PowerPoint - Sehr gut',
         prog_title: 'Programmierung',
+        prog_python: '• Python - Selbststudium',
+        prog_java: '• Java - Selbststudium',
+        prog_web: '• Webentwicklung',
+        prog_arduino: '• Arduino - Zahlreiche Projekte',
         business_title: 'Business & Analytik',
+        business_lcci: '• LCCI-Zertifikat Accounting',
+        business_math: '• Mathematik (Abakus-Lehrer)',
+        business_ecommerce: '• E-Commerce Erfahrung',
+        
+        // Experience section
         exp_title: 'Berufliche',
         exp_subtitle: 'Erfahrung',
         current_position: 'Bauingenieur',
@@ -375,6 +464,8 @@
         family_title: 'Familienunternehmen',
         family_subtitle: 'Stationärer Handel & E-Commerce',
         family_desc: 'Aktive Mitarbeit mit Fokus auf Buchhaltung, Kundenbeziehungen und digitale Vertriebskanäle.',
+        
+        // Contact section
         contact_title: 'Lassen Sie uns',
         contact_subtitle: 'zusammenarbeiten',
         contact_desc: 'Ich bin offen für neue Herausforderungen und spannende Projekte. Kontaktieren Sie mich gerne!',
@@ -382,26 +473,60 @@
         contact_github: 'GitHub',
         contact_location: 'Standort',
         contact_location_value: 'Deutschland',
+        
+        // Typing animation
         tagline1: 'Bauingenieur · M.Eng. · AutoCAD Experte',
         tagline2: 'C1-Deutsch · 4 Sprachen fließend',
         tagline3: 'Python · Java · Arduino Entwickler',
         tagline4: 'Malaysia → Deutschland · Interkulturell'
       },
       en: {
+        // Navigation
         nav_about: 'About',
         nav_skills: 'Skills',
         nav_experience: 'Experience',
         nav_contact: 'Contact',
+        
+        // Hero badges
+        hero_badge1: '🇲🇾 Malaysia → Germany',
+        hero_badge2: '🎓 M.Eng. Civil Engineering',
+        hero_badge3: '🗣 4 Languages Fluent',
+        
+        // About section
         about_title: 'About',
         about_me: 'Me',
         about_p1: 'As a <span class="text-orange-400 font-semibold">Civil Engineer</span> with an international background, I bring a unique combination of technical expertise and intercultural competence.',
         about_p2: 'With <span class="text-amber-400 font-semibold">German proficiency at C1 level</span> and my multilingual abilities, I communicate effortlessly in four languages and bridge cultural boundaries.',
         about_p3: 'My <span class="text-emerald-400 font-semibold">analytical mindset</span> and business understanding from the family-run company perfectly complement my technical skills.',
+        
+        // Language cards
+        lang_chinese: 'Chinese',
+        lang_german: 'German',
+        lang_english: 'English',
+        lang_malay: 'Malay',
+        lang_native: 'Native',
+        lang_c1: 'C1 Level',
+        lang_fluent: 'Fluent',
+        lang_fluent2: 'Fluent',
+        
+        // Skills section
         skills_title: 'Skills',
         skills_subtitle: '& Competencies',
         tech_title: 'Technical Software',
+        tech_autocad: '📐 AutoCAD LT - Expert',
+        tech_excel: '• Microsoft Excel - Expert',
+        tech_office: '• Word & PowerPoint - Very Good',
         prog_title: 'Programming',
+        prog_python: '• Python - Self-taught',
+        prog_java: '• Java - Self-taught',
+        prog_web: '• Web Development',
+        prog_arduino: '• Arduino - Numerous Projects',
         business_title: 'Business & Analytics',
+        business_lcci: '• LCCI Certificate Accounting',
+        business_math: '• Mathematics (Abacus Teacher)',
+        business_ecommerce: '• E-Commerce Experience',
+        
+        // Experience section
         exp_title: 'Professional',
         exp_subtitle: 'Experience',
         current_position: 'Civil Engineer',
@@ -423,6 +548,8 @@
         family_title: 'Family Business',
         family_subtitle: 'Retail & E-Commerce',
         family_desc: 'Active involvement with focus on accounting, customer relationships, and digital sales channels.',
+        
+        // Contact section
         contact_title: "Let's Work",
         contact_subtitle: 'Together',
         contact_desc: 'I am open to new challenges and exciting projects. Feel free to contact me!',
@@ -430,41 +557,83 @@
         contact_github: 'GitHub',
         contact_location: 'Location',
         contact_location_value: 'Germany',
+        
+        // Typing animation
         tagline1: 'Civil Engineer · M.Eng. · AutoCAD Expert',
         tagline2: 'C1-German · 4 Languages Fluent',
         tagline3: 'Python · Java · Arduino Developer',
         tagline4: 'Malaysia → Germany · Intercultural'
       },
       zh: {
-        nav_about: '关于   ',
+        // Navigation
+        nav_about: '关于',
         nav_skills: '技能',
         nav_experience: '经历',
         nav_contact: '联系',
+        
+        // Hero badges
+        hero_badge1: '🇲🇾 马来西亚 → 德国',
+        hero_badge2: '🎓 工学硕士·土木工程',
+        hero_badge3: '🗣 流利使用4种语言',
+        
+        // About section
         about_title: '关于',
         about_me: '我',
-        about_p1: '作为具有国际背景的<span class="text-orange-400 font-semibold">土木工程师</span>，我带来了技术专长和跨文     能力的独特结合。',
+        about_p1: '作为具有国际背景的<span class="text-orange-400 font-semibold">土木工程师</span>，我带来了技术专长和跨文化能力的独特结合。',
         about_p2: '凭借<span class="text-amber-400 font-semibold">C1级德语水平</span>和多语言能力，我能轻松使用四种语言交流，跨越文化界限。',
-        about_p3: '我的<span class="text-emerald-400 font-semibold">分析思维</span>和来自家族企业的商业理  完美地补充了我的技术技能。',
+        about_p3: '我的<span class="text-emerald-400 font-semibold">分析思维</span>和来自家族企业的商业理解完美地补充了我的技术技能。',
+        
+        // Language cards
+        lang_chinese: '中文',
+        lang_german: '德语',
+        lang_english: '英语',
+        lang_malay: '马来语',
+        lang_native: '母语',
+        lang_c1: 'C1水平',
+        lang_fluent: '流利',
+        lang_fluent2: '流利',
+        
+        // Skills section
         skills_title: '技能',
         skills_subtitle: '与能力',
         tech_title: '技术软件',
+        tech_autocad: '📐 AutoCAD LT - 专家',
+        tech_excel: '• Microsoft Excel - 专家',
+        tech_office: '• Word & PowerPoint - 非常好',
         prog_title: '编程',
+        prog_python: '• Python - 自学',
+        prog_java: '• Java - 自学',
+        prog_web: '• 网页开发',
+        prog_arduino: '• Arduino - 众多项目',
         business_title: '商业与分析',
+        business_lcci: '• LCCI会计证书',
+        business_math: '• 数学（算盘老师）',
+        business_ecommerce: '• 电子商务经验',
+        
+        // Experience section
         exp_title: '职业',
         exp_subtitle: '经历',
         current_position: '土木工程师',
         current_company: 'SONNTAG Baugesellschaft mbH & Co. KG',
         current_badge: '当前',
-        current_desc: '负责建筑项目的规划、计算和监督。应用最先   的CAD软件，与跨学科团队     切合作。',
+        current_desc: '负责建筑项目的规划、计算和监督。应用最先进的CAD软件，与跨学科团队密切合作。',
         edu_master_title: '工程硕士 (M.Eng.)',
         edu_master_field: '土木工程',
         edu_master_desc: '在静力学、建筑、施工管理和技术计算方面接受全面培训。',
+        praktikum_title: '实习',
+        praktikum_company: 'SONNTAG Baugesellschaft mbH & Co. KG',
+        praktikum_desc: '在建筑规划和监督、CAD应用和项目协调方面的实践经验。',
         edu_bachelor_title: '工程学士 (B.Eng.)',
         edu_bachelor_field: '土木工程',
         edu_bachelor_desc: '土木工程原理的基础教育。',
+        vorpraktikum_title: '预习实习',
+        vorpraktikum_company: 'R. Sauerborn GmbH',
+        vorpraktikum_desc: '对建筑行业和建筑工地工作基础的首次实践见解。',
         family_title: '家族企业',
         family_subtitle: '零售与电子商务',
         family_desc: '积极参与，专注于会计、客户关系和数字销售渠道。',
+        
+        // Contact section
         contact_title: '让我们',
         contact_subtitle: '合作',
         contact_desc: '我对新挑战和激动人心的项目持开放态度。欢迎联系我！',
@@ -472,26 +641,60 @@
         contact_github: 'GitHub',
         contact_location: '位置',
         contact_location_value: '德国',
+        
+        // Typing animation
         tagline1: '土木工程师 · 工学硕士 · AutoCAD专家',
         tagline2: 'C1德语 · 流利使用4种语言',
-        tagline3: 'Python · Java · Arduino开    ',
+        tagline3: 'Python · Java · Arduino开发者',
         tagline4: '马来西亚 → 德国 · 跨文化'
       },
       ms: {
+        // Navigation
         nav_about: 'Tentang',
         nav_skills: 'Kemahiran',
         nav_experience: 'Pengalaman',
         nav_contact: 'Hubungi',
+        
+        // Hero badges
+        hero_badge1: '🇲🇾 Malaysia → Jerman',
+        hero_badge2: '🎓 M.Eng. Kejuruteraan Awam',
+        hero_badge3: '🗣 4 Bahasa Fasih',
+        
+        // About section
         about_title: 'Tentang',
         about_me: 'Saya',
         about_p1: 'Sebagai <span class="text-orange-400 font-semibold">Jurutera Awam</span> dengan latar belakang antarabangsa, saya membawa gabungan unik kepakaran teknikal dan kecekapan antara budaya.',
         about_p2: 'Dengan <span class="text-amber-400 font-semibold">kemahiran Bahasa Jerman pada tahap C1</span> dan keupayaan berbilang bahasa saya, saya berkomunikasi dengan mudah dalam empat bahasa dan merapatkan sempadan budaya.',
         about_p3: '<span class="text-emerald-400 font-semibold">Pemikiran analitikal</span> saya dan pemahaman perniagaan dari syarikat keluarga melengkapkan kemahiran teknikal saya dengan sempurna.',
+        
+        // Language cards
+        lang_chinese: 'Cina',
+        lang_german: 'Jerman',
+        lang_english: 'Inggeris',
+        lang_malay: 'Melayu',
+        lang_native: 'Bahasa Ibunda',
+        lang_c1: 'Tahap C1',
+        lang_fluent: 'Fasih',
+        lang_fluent2: 'Fasih',
+        
+        // Skills section
         skills_title: 'Kemahiran',
         skills_subtitle: '& Kecekapan',
         tech_title: 'Perisian Teknikal',
+        tech_autocad: '📐 AutoCAD LT - Pakar',
+        tech_excel: '• Microsoft Excel - Pakar',
+        tech_office: '• Word & PowerPoint - Sangat Baik',
         prog_title: 'Pengaturcaraan',
+        prog_python: '• Python - Belajar Sendiri',
+        prog_java: '• Java - Belajar Sendiri',
+        prog_web: '• Pembangunan Web',
+        prog_arduino: '• Arduino - Banyak Projek',
         business_title: 'Perniagaan & Analitik',
+        business_lcci: '• Sijil LCCI Perakaunan',
+        business_math: '• Matematik (Guru Sempoa)',
+        business_ecommerce: '• Pengalaman E-Dagang',
+        
+        // Experience section
         exp_title: 'Pengalaman',
         exp_subtitle: 'Profesional',
         current_position: 'Jurutera Awam',
@@ -513,6 +716,8 @@
         family_title: 'Perniagaan Keluarga',
         family_subtitle: 'Peruncitan & E-Dagang',
         family_desc: 'Penglibatan aktif dengan fokus pada perakaunan, hubungan pelanggan, dan saluran jualan digital.',
+        
+        // Contact section
         contact_title: 'Mari Kita',
         contact_subtitle: 'Bekerjasama',
         contact_desc: 'Saya terbuka kepada cabaran baru dan projek yang menarik. Jangan ragu untuk menghubungi saya!',
@@ -520,6 +725,8 @@
         contact_github: 'GitHub',
         contact_location: 'Lokasi',
         contact_location_value: 'Jerman',
+        
+        // Typing animation
         tagline1: 'Jurutera Awam · M.Eng. · Pakar AutoCAD',
         tagline2: 'Jerman C1 · 4 Bahasa Fasih',
         tagline3: 'Python · Java · Pembangun Arduino',
@@ -737,5 +944,5 @@
     startTyping();
     animateExperienceCards();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c57bc8eb178d21f',t:'MTc2OTY3OTI5Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ </body>
 </html>
